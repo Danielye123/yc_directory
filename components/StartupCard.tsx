@@ -6,12 +6,12 @@ import React from 'react'
 import { Button } from "./ui/button"
 
 const StartupCard = ({ post }: { post: StartupTypeCard }) => {
-    const { _createAt, views, author: { _id: authorId, name}, title, category, _id, image, description} = post;
+    const { _createdAt, views, author: { _id: authorId, name}, title, category, _id, image, description} = post;
   return (
     <li className="startup-card group">
         <div className="flex-between">
             <p className="startup_card_date">
-                {formatDate(_createAt)}
+                {formatDate(_createdAt)}
             </p>
             <div className="flex gap-1.5">
                 <EyeIcon className="size-6 text-primary" />
